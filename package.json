@@ -1,0 +1,15 @@
+{
+  "name": "red-treasure-book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.25",
+    "vuepress-plugin-auto-sidebar": "^2.4.0-alpha.1"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "gen-side": "node ./utils/gen-side.js"
+  }
+}

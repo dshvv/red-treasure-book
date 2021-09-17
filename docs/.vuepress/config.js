@@ -8,6 +8,23 @@ module.exports = {
   base: '/red-treasure-book/dist/',
   dest: './dist',
   head: [['script', { src: './js/head.js' }]],
+  // plugins: [
+  //   [
+  //     '@vuepress/docsearch',
+  //     {
+  //       apiKey: '<API_KEY>',
+  //       indexName: '<INDEX_NAME>',
+  //       locales: {
+  //         '/': {
+  //           placeholder: 'Search Documentation',
+  //         },
+  //         '/zh/': {
+  //           placeholder: '搜索文档',
+  //         },
+  //       },
+  //     },
+  //   ],
+  // ],
   themeConfig: {
     sidebar,
     navbar: [

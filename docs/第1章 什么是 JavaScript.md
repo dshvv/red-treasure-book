@@ -24,7 +24,7 @@
 
 ## 1.2 JavaScript 实现
 虽然 JavaScript 和 ECMAScript 基本上是同义词，但 JavaScript 远远不限于 ECMA-262 所定义的那样。没错，完整的 JavaScript 实现包含以下几个部分（见图 1-1）：核心（ ECMAScript）、文档对象模型（ DOM）、浏览器对象模型（ BOM）   
-![1-1](/images/1-1.png#w50)
+![1-1](/red-treasure-book-html/images/1-1.png#w50)
 
 
 ### 1.2.1 ECMAScript
@@ -141,7 +141,7 @@ JScript 的再次更新出现在 IE4 中的 JScript 3.0（ 2.0 版是在 Microso
 </html>
 ```
 这些代码通过 DOM 可以表示为一组分层节点，如图 1-2 所示。
-![1-1](/images/1-2.png#w50)
+![1-1](/red-treasure-book-html/images/1-2.png#w50)
 
 DOM 通过创建表示文档的树，让开发者可以随心所欲地控制网页的内容和结构。使用 DOM API，可以轻松地删除、添加、替换、修改节点。
 

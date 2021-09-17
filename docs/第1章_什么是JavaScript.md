@@ -1,4 +1,4 @@
-# 第1 章 什么是 JavaScript 
+# 第1章 什么是JavaScript 
 本章内容有：JavaScript 历史回顾、JavaScript 是什么、JavaScript 与 ECMAScript 的关系、JavaScript 的不同版本。
 
 1995 年， JavaScript 问世。当时，它的主要用途是代替 Perl 等服务器端语言处理输入验证。在此之前，要验证某个必填字段是否已填写，或者某个输入的值是否有效，需要与服务器的一次往返通信。网景公司希望通过在其 Navigator 浏览器中加入 JavaScript 来改变这个局面。在那个普遍通过电话拨号上网的年代，由客户端处理某些基本的验证是让人兴奋的新功能。缓慢的网速让页面每次刷新都考验着人们的耐心。   
@@ -24,7 +24,7 @@
 
 ## 1.2 JavaScript 实现
 虽然 JavaScript 和 ECMAScript 基本上是同义词，但 JavaScript 远远不限于 ECMA-262 所定义的那样。没错，完整的 JavaScript 实现包含以下几个部分（见图 1-1）：核心（ ECMAScript）、文档对象模型（ DOM）、浏览器对象模型（ BOM）   
-![1-1](/red-treasure-book-html/images/1-1.png#w50)
+![1-1](/red-treasure-book/dist/images/1-1.png#w50)
 
 
 ### 1.2.1 ECMAScript
@@ -141,7 +141,7 @@ JScript 的再次更新出现在 IE4 中的 JScript 3.0（ 2.0 版是在 Microso
 </html>
 ```
 这些代码通过 DOM 可以表示为一组分层节点，如图 1-2 所示。
-![1-1](/red-treasure-book-html/images/1-2.png#w50)
+![1-1](/red-treasure-book/dist/images/1-2.png#w50)
 
 DOM 通过创建表示文档的树，让开发者可以随心所欲地控制网页的内容和结构。使用 DOM API，可以轻松地删除、添加、替换、修改节点。
 

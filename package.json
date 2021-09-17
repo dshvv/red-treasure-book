@@ -8,8 +8,8 @@
     "vuepress-plugin-auto-sidebar": "^2.4.0-alpha.1"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "gen-side": "node ./utils/gen-side.js"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "side": "node ./utils/gen-side.js"
   }
 }

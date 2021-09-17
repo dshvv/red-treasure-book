@@ -2,7 +2,7 @@
 const sidebar = require('../../utils/sidebar');
 
 module.exports = {
-    base: '/red-treasure-book/', 
+    base: '/red-treasure-book/dist/', 
     head:[['script',{src:'./js/head.js'}]],
     themeConfig: {
         // 侧边栏数组

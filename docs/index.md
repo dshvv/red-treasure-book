@@ -1,3 +1,3 @@
 
 # 简介
-![封面](/red-treasure-book/dist/images/fm.png)
+![封面](/images/fm.png)

@@ -24,7 +24,7 @@
 
 ## 1.2 JavaScript 实现
 虽然 JavaScript 和 ECMAScript 基本上是同义词，但 JavaScript 远远不限于 ECMA-262 所定义的那样。没错，完整的 JavaScript 实现包含以下几个部分（见图 1-1）：核心（ ECMAScript）、文档对象模型（ DOM）、浏览器对象模型（ BOM）   
-![1-1](/red-treasure-book/dist/images/1-1.png#w50)
+![1-1](/images/1-1.png#w50)
 
 
 ### 1.2.1 ECMAScript
@@ -141,7 +141,7 @@ JScript 的再次更新出现在 IE4 中的 JScript 3.0（ 2.0 版是在 Microso
 </html>
 ```
 这些代码通过 DOM 可以表示为一组分层节点，如图 1-2 所示。
-![1-1](/red-treasure-book/dist/images/1-2.png#w50)
+![1-1](/images/1-2.png#w50)
 
 DOM 通过创建表示文档的树，让开发者可以随心所欲地控制网页的内容和结构。使用 DOM API，可以轻松地删除、添加、替换、修改节点。
 
@@ -224,18 +224,18 @@ IE3 和 Netscape Navigator 3 提供了浏览器对象模型（ BOM） API，用�
 
 |  浏 览 器   | JavaScript 版本  |
 |  ----  | ----  |
-| Netscape Navigator | 2 1.0 |
-| Netscape Navigator | 3 1.1 |
-| Netscape Navigator | 4 1.2 |
-| Netscape Navigator | 4.06 1.3 |
+| Netscape Navigator2 | 1.0 |
+| Netscape Navigator3 | 1.1 |
+| Netscape Navigator4 | 1.2 |
+| Netscape Navigator4.06 | 1.3 |
 | Netscape 6+（ Mozilla 0.6.0+） | 1.5 |
-| Firefox | 1 1.5 |
-| Firefox | 1.5 1.6 |
-| Firefox | 2 1.7 |
-| Firefox | 3 1.8 |
-| Firefox | 3.5 1.8.1 |
-| Firefox | 3.6 1.8.2 |
-| Firefox | 4 1.8.5 |
+| Firefox1 | 1.5 |
+| Firefox1.5 | 1.6 |
+| Firefox2 | 1.7 |
+| Firefox3 | 1.8 |
+| Firefox3.5 | 1.8.1 |
+| Firefox3.6 | 1.8.2 |
+| Firefox4 | 1.8.5 |
 
 这种版本编号方式是根据 Firefox 4 要发布 JavaScript 2.0 决定的，在此之前版本号的每次递增，反映的是 JavaScript 实现逐渐接近 2.0 建议。虽然这是最初的计划，但 JavaScript 的发展让这个计划变得不可能。 JavaScript 2.0 作为一个目标已经不存在了，而这种版本号编排方式在 Firefox 4 发布后就终止了。
 > 注意 Netscape/Mozilla 仍然沿用这种版本方案。而 IE 的 JScript 有不同的版本号规则。这些 JScript 版本与上表提到的 JavaScript 版本并不对应。此外，多数浏览器对 JavaScript 的支持，指的是实现 ECMAScript 和 DOM 的程度。

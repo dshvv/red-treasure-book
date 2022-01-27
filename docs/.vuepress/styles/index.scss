@@ -1,6 +1,10 @@
 br {
   color: red;
 }
+img[src*="#w100"] {
+  width: 100%;
+}
+
 img[src*="#w90"] {
   width: 90%;
 }

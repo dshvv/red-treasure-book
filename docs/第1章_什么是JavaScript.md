@@ -34,7 +34,7 @@ ECMAScript，即 ECMA-262 定义的语言，并不局限于 Web 浏览器。事�
 
 ECMAScript 只 是 对 实 现 这 个 规 范 描 述 的 所 有 方 面 的 一 门 语 言 的 称 呼 。 JavaScript 实 现了ECMAScript，而 Adobe ActionScript 同样也实现了 ECMAScript。 
 
-**1、ECMAScript 版本**   
+**1. ECMAScript 版本**   
 ECMAScript 不同的版本以“edition”表示（也就是描述特定实现的 ECMA-262 的版本）。 ECMA-262最近的版本是第 12 版，发布于 2021年 6 月。
 
 ECMA-262 的第 1 版本质上跟网景的 JavaScript 1.1 相同，只不过删除了所有浏览器特定的代码，外加少量细微的修改。 ECMA-262 要求支持 Unicode 标准（以支持多语言），而且对象要与平台无关（Netscape JavaScript 1.1 的对象不是这样，比如它的 Date 对象就依赖平台）。这也是 JavaScript 1.1 和 JavaScript 1.2 不符合 ECMA-262 第 1 版要求的原因。
@@ -64,7 +64,7 @@ ECMA-262 第 11 版，也称为 ES11、 ES2020，发布于 2020 年 6 月。这�
 
 ECMA-262 第 12 版，也称为 ES12、 ES2021，发布于 2021 年 6 月。最新举行的一次 TC39 会议正式确定了 ECMAScript 2021 的完整功能列表。具体包含以下内容 String.prototype.replaceAll、Promise.any、WeakRef、FinalizationRegistry、Logical Assignment Operators、Numeric separators。
 
-**2、ECMAScript 符合性是什么意思**   
+**2. ECMAScript 符合性是什么意思**   
 ECMA-262 阐述了什么是 ECMAScript 符合性。要成为 ECMAScript 实现，必须满足下列条件：
 
 - 支持 ECMA-262 中描述的所有“类型、值、对象、属性、函数，以及程序语法与语义”。
@@ -74,7 +74,7 @@ ECMA-262 阐述了什么是 ECMAScript 符合性。要成为 ECMAScript 实现�
 
 以上条件为实现开发者基于 ECMAScript 开发语言提供了极大的权限和灵活度，也是其广受欢迎的原因之一。​
 
-**3、浏览器对 ECMAScript 的支持**   
+**3.浏览器对 ECMAScript 的支持**   
 1996 年， Netscape Navigator 3 发布时包含了 JavaScript 1.1。 JavaScript 1.1 规范随后被提交给 Ecma，作为对新的 ECMA-262 标准的建议。随着 JavaScript 迅速走红，网景非常愿意开发 1.2 版。可是有个问题： Ecma 尚未接受网景的建议。
 
 Netscape Navigator 3 发布后不久，微软推出了 IE3。 IE 的这个版本包含了 JScript 1.0，本意是提供与JavaScript 1.1 相同的功能。不过，由于缺少很多文档，而且还有不少重复性功能， JScript 1.0 远远没有JavaScript 1.1 那么强大。
@@ -145,13 +145,13 @@ JScript 的再次更新出现在 IE4 中的 JScript 3.0（ 2.0 版是在 Microso
 
 DOM 通过创建表示文档的树，让开发者可以随心所欲地控制网页的内容和结构。使用 DOM API，可以轻松地删除、添加、替换、修改节点。
 
-**1、为什么 DOM 是必需的**   
+**1. 为什么 DOM 是必需的**   
 在 IE4 和 Netscape Navigator 4 支持不同形式的动态 HTML（ DHTML）的情况下，开发者首先可以做到不刷新页面而修改页面外观和内容。这代表了 Web 技术的一个巨大进步，但也暴露了很大的问题。由于网景和微软采用不同思路开发 DHTML，开发者写一个 HTML 页面就可以在任何浏览器中运行的好日子就此终结。
 
 为了保持 Web 跨平台的本性，必须要做点什么。人们担心如果无法控制网景和微软各行其是，那么 Web 就会发生分裂，导致人们面向浏览器开发网页。就在这时，万维网联盟（ W3C， World Wide WebConsortium）开始了制定 DOM 标准的进程。
 
 
-**2、DOM 级别**   
+**2. DOM 级别**   
 1998 年 10 月， DOM Level 1 成为 W3C 的推荐标准。这个规范由两个模块组成： DOM Core 和 DOMHTML。前者提供了一种映射 XML 文档，从而方便访问和操作文档任意部分的方式；后者扩展了前者，并增加了特定于 HTML 的对象和方法。
 > 注意 DOM 并非只能通过 JavaScript 访问，而且确实被其他很多语言实现了。不过对于浏览器来说， DOM 就是使用 ECMAScript 实现的，如今已经成为 JavaScript 语言的一大组成部分。
 
@@ -166,7 +166,7 @@ DOM Level 3 进一步扩展了 DOM，增加了以统一的方式加载和保存�
 
 注意 在阅读关于 DOM 的资料时，你可能会看到 DOM Level 0 的说法。注意，并没有一个标准叫“DOM Level 0”，这只是 DOM 历史中的一个参照点。 DOM Level 0 可以看作 IE4和 Netscape Navigator 4 中最初支持的 DHTML。
 
-**3、其他 DOM**   
+**3. 其他 DOM**   
 除了 DOM Core 和 DOM HTML 接口，有些其他语言也发布了自己的 DOM 标准。下面列出的语言是基于 XML 的，每一种都增加了该语言独有的 DOM 方法和接口：
 
 - 可伸缩矢量图（ SVG， Scalable Vector Graphics）
@@ -175,7 +175,7 @@ DOM Level 3 进一步扩展了 DOM，增加了以统一的方式加载和保存�
 
 此外，还有一些语言开发了自己的 DOM 实现，比如 Mozilla 的 XML 用户界面语言（ XUL， XML UserInterface Language）。不过，只有前面列表中的语言是 W3C 推荐标准。
 
-**4、Web 浏览器对 DOM 的支持情况**   
+**4. Web 浏览器对 DOM 的支持情况**   
 DOM 标准在 Web 浏览器实现它之前就已经作为标准发布了。 IE 在第 5 版中尝试支持 DOM，但直到 5.5 版才开始真正支持，该版本实现了 DOM Level 1 的大部分。 IE 在第 6 版和第 7 版中都没有实现新特性，第 8 版中修复了一些问题。
 
 网景在 Netscape 6（ Mozilla 0.6.0）之前都不支持 DOM。 Netscape 7 之后， Mozilla 把开发资源转移到开发 Firefox 浏览器上。 Firefox 3+支持全部的 Level 1、几乎全部的 Level 2，以及 Level 3 的某些部分。（ Mozilla 开发团队的目标是打造百分之百兼容标准的浏览器，他们的工作也得到了应有的回报。）

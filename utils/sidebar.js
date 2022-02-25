@@ -1,1 +1,1 @@
-module.exports =["index.md","第1章_什么是JavaScript.md","第2章_HTML中的JavaScript.md","第3章_语言基础.md","第4章_变量、作用域与内存.md","第5章_基本引用类型.md","第6章_集合引用类型.md","第7章_迭代器与生成器.md"]
+module.exports =["index.md","第1章_什么是JavaScript.md","第2章_HTML中的JavaScript.md","第3章_语言基础.md","第4章_变量、作用域与内存.md","第5章_基本引用类型.md","第6章_集合引用类型.md","第7章_迭代器与生成器.md","第8章_对象、类与面向对象编程.md","第9章_代理与反射.md","第10章_函数.md"]

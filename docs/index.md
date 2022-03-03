@@ -1,3 +1,3 @@
 
 # 简介
-![封面](/images/fm.png#w80)
+![封面](/images/fm.png#w50)

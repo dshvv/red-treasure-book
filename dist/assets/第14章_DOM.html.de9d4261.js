@@ -1,1 +1,0 @@
-const t={key:"v-55679c1c",path:"/%E7%AC%AC14%E7%AB%A0_DOM.html",title:"\u7B2C14\u7AE0 DOM",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"14.1 \u8282\u70B9\u5C42\u7EA7",slug:"_14-1-\u8282\u70B9\u5C42\u7EA7",children:[]}],git:{updatedTime:null,contributors:[]},filePathRelative:"\u7B2C14\u7AE0_DOM.md"};export{t as data};

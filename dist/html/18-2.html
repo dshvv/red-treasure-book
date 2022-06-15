@@ -1,0 +1,17 @@
+<canvas id="drawing"></canvas>
+<script>
+  let drawing = document.getElementById("drawing");
+  // 确保浏览器支持<canvas>
+  if (drawing.getContext) {
+    let context = drawing.getContext("2d");
+    /*
+     * 引自 MDN 文档
+     */
+    // 绘制红色轮廓的矩形
+    context.strokeStyle = "#ff0000";
+    context.strokeRect(10, 10, 50, 50);
+    // 绘制半透明蓝色轮廓的矩形
+    context.strokeStyle = "rgba(0,0,255,0.5)";
+    context.strokeRect(30, 30, 50, 50);
+  }
+</script>

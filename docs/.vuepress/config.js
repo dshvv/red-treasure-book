@@ -11,7 +11,10 @@ module.exports = {
   base: '/red-treasure-book/dist/',
   dest: './dist',
   head: [['script', { src: './js/head.js' }]],
+
   theme: defaultTheme({
+    contributorsText: '作者',
+    lastUpdatedText: '最后更新',
     sidebar,
     navbar: [
       {
@@ -26,11 +29,8 @@ module.exports = {
     searchPlugin({
       locales: {
         '/': {
-          placeholder: 'Search',
-        },
-        '/zh/': {
           placeholder: '搜索',
-        },
+        }
       },
     }),
   ],

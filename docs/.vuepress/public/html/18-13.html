@@ -1,0 +1,16 @@
+<canvas id="drawing" height="200"></canvas>
+<img src="./18-9/img.png" onload="img18_13Load(event)" hidden/>
+<script>
+  const img18_13Load = (e) => {
+    const image = e.target;
+    let drawing = document.getElementById("drawing");
+    // 确保浏览器支持<canvas>
+    if (drawing.getContext) {
+      let context = drawing.getContext("2d");
+      pattern = context.createPattern(image, "repeat");
+      // 绘制矩形
+      context.fillStyle = pattern;
+      context.fillRect(10, 10, 150, 150);
+    }
+  };
+</script>

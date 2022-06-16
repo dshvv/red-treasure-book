@@ -1,4 +1,8 @@
-# 第2章 HTML中的JavaScript
+---
+lang: zh-CN
+title: 第2章 HTML中的JavaScript
+description: 使用`<script>`元素、行内脚本与外部脚本的比较、文档模式对 JavaScript 有什么影响、确保 JavaScript 不可用时的用户体验
+---
 
 本章内容：使用`<script>`元素、行内脚本与外部脚本的比较、文档模式对 JavaScript 有什么影响、确保 JavaScript 不可用时的用户体验
 
@@ -65,7 +69,9 @@
 
 以上语法不能在 HTML 文件中使用，因为它是无效的 HTML，有些浏览器不能正常处理，比如 IE。
 
-> 注意按照惯例，外部 JavaScript 文件的扩展名是.js。这不是必需的，因为浏览器不会检查所包含 JavaScript 文件的扩展名。这就为使用服务器端脚本语言动态生成 JavaScript 代码，或者在浏览器中将 JavaScript 扩展语言（如 TypeScript，或 React 的 JSX）转译为 JavaScript 提供了可能性。不过要注意，服务器经常会根据文件扩展来确定响应的正确 MIME 类型。如果不打算使用.js 扩展名，一定要确保服务器能返回正确的 MIME 类型。
+:::tip 注意
+按照惯例，外部 JavaScript 文件的扩展名是.js。这不是必需的，因为浏览器不会检查所包含 JavaScript 文件的扩展名。这就为使用服务器端脚本语言动态生成 JavaScript 代码，或者在浏览器中将 JavaScript 扩展语言（如 TypeScript，或 React 的 JSX）转译为 JavaScript 提供了可能性。不过要注意，服务器经常会根据文件扩展来确定响应的正确 MIME 类型。如果不打算使用.js 扩展名，一定要确保服务器能返回正确的 MIME 类型。
+:::
 
 另外，使用了 src 属性的`<script>`元素不应该再在`<script>`和`</script>`标签中再包含其他 JavaScript 代码。如果两者都提供的话，则浏览器只会下载并执行脚本文件，从而忽略行内代码。
 
@@ -139,7 +145,9 @@ HTML4.01 为`<script>`元素定义了一个叫 defer 的属性。这个属性表
 
 如前所述，defer 属性只对外部脚本文件才有效。这是 HTML5 中明确规定的，因此支持 HTML5 的浏览器会忽略行内脚本的 defer 属性。IE4~7 展示出的都是旧的行为，IE8 及更高版本则支持 HTML5 定义的行为。对 defer 属性的支持是从 IE4、Firefox3.5、Safari5 和 Chrome7 开始的。其他所有浏览器则会忽略这个属性，按照通常的做法来处理脚本。考虑到这一点，还是把要推迟执行的脚本放在页面底部比较好。
 
-> 注意 对于 XHTML 文档，指定 defer 属性时应该写成 defer="defer"。
+:::tip 注意
+对于 XHTML 文档，指定 defer 属性时应该写成 defer="defer"。
+:::
 
 ### 2.1.3 异步执行脚本
 
@@ -163,7 +171,9 @@ HTML5 为`<script>`元素定义了 async 属性。从改变脚本处理方式上
 
 异步脚本保证会在页面的 load 事件前执行，但可能会在 DOMContentLoaded（参见第 17 章）之前或之后。Firefox3.6、Safari5 和 Chrome7 支持异步脚本。使用 async 也会告诉页面你不会使用 document.write，不过好的 Web 开发实践根本就不推荐使用这个方法。
 
-> 注意 对于 XHTML 文档，指定 async 属性时应该写成 async="async"。
+:::tip 注意
+对于 XHTML 文档，指定 async 属性时应该写成 async="async"。
+:::
 
 ### 2.1.4 动态加载脚本
 
@@ -267,8 +277,9 @@ document.head.appendChild(script);
 
 这种格式适用于所有现代浏览器。虽然有点黑科技的味道，但它可以通过 XHTML 验证，而且对 XHTML 之前的浏览器也能优雅地降级。
 
-> 注意 XHTML 模式会在页面的 MIME 类型被指定为"application/xhtml+xml"时触
-> 发。并不是所有浏览器都支持以这种方式送达的 XHTML。
+:::tip 注意
+XHTML 模式会在页面的 MIME 类型被指定为"application/xhtml+xml"时触发。并不是所有浏览器都支持以这种方式送达的 XHTML。
+:::
 
 ### 2.1.6 废弃的语法
 

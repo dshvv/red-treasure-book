@@ -1,0 +1,17 @@
+<canvas id="drawing" height="200"></canvas>
+<img src="./img.png" id="img18_9" onload="img18_9Load(event)" hidden/>
+<script>
+  const img18_9Load = (e) => {
+    const image = e.target;
+    let drawing = document.getElementById("drawing");
+    // 确保浏览器支持<canvas>
+    if (drawing.getContext) {
+      let context = drawing.getContext("2d");
+      context.drawImage(image, 10, 10);
+      context.drawImage(image, 50, 10, 20, 30);
+      context.drawImage(image, 0, 10, 50, 50, 0, 100, 40, 60);
+      // 描画路径
+      context.stroke();
+    }
+  };
+</script>

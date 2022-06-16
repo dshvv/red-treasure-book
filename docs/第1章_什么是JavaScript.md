@@ -1,4 +1,9 @@
-# 第1章 什么是JavaScript 
+---
+lang: zh-CN
+title: 第1章 什么是JavaScript
+description: JavaScript 历史回顾、JavaScript 是什么、JavaScript 与 ECMAScript 的关系、JavaScript 的不同版本
+---
+
 本章内容有：JavaScript 历史回顾、JavaScript 是什么、JavaScript 与 ECMAScript 的关系、JavaScript 的不同版本。
 
 1995 年， JavaScript 问世。当时，它的主要用途是代替 Perl 等服务器端语言处理输入验证。在此之前，要验证某个必填字段是否已填写，或者某个输入的值是否有效，需要与服务器的一次往返通信。网景公司希望通过在其 Navigator 浏览器中加入 JavaScript 来改变这个局面。在那个普遍通过电话拨号上网的年代，由客户端处理某些基本的验证是让人兴奋的新功能。缓慢的网速让页面每次刷新都考验着人们的耐心。   
@@ -153,7 +158,9 @@ DOM 通过创建表示文档的树，让开发者可以随心所欲地控制网�
 
 **2. DOM 级别**   
 1998 年 10 月， DOM Level 1 成为 W3C 的推荐标准。这个规范由两个模块组成： DOM Core 和 DOMHTML。前者提供了一种映射 XML 文档，从而方便访问和操作文档任意部分的方式；后者扩展了前者，并增加了特定于 HTML 的对象和方法。
-> 注意 DOM 并非只能通过 JavaScript 访问，而且确实被其他很多语言实现了。不过对于浏览器来说， DOM 就是使用 ECMAScript 实现的，如今已经成为 JavaScript 语言的一大组成部分。
+:::tip 注意
+DOM 并非只能通过 JavaScript 访问，而且确实被其他很多语言实现了。不过对于浏览器来说， DOM 就是使用 ECMAScript 实现的，如今已经成为 JavaScript 语言的一大组成部分。
+:::
 
 DOM Level 1 的目标是映射文档结构，而 DOM Level 2 的目标则宽泛得多。这个对最初 DOM 的扩展增加了对（ DHTML 早就支持的）鼠标和用户界面事件、范围、遍历（迭代 DOM 节点的方法）的支持，而且通过对象接口支持了层叠样式表（ CSS）。另外， DOM Level 1 中的 DOM Core 也被扩展以包含对 XML 命名空间的支持。DOM Level 2 新增了以下模块，以支持新的接口。
 
@@ -238,7 +245,9 @@ IE3 和 Netscape Navigator 3 提供了浏览器对象模型（ BOM） API，用�
 | Firefox4 | 1.8.5 |
 
 这种版本编号方式是根据 Firefox 4 要发布 JavaScript 2.0 决定的，在此之前版本号的每次递增，反映的是 JavaScript 实现逐渐接近 2.0 建议。虽然这是最初的计划，但 JavaScript 的发展让这个计划变得不可能。 JavaScript 2.0 作为一个目标已经不存在了，而这种版本号编排方式在 Firefox 4 发布后就终止了。
-> 注意 Netscape/Mozilla 仍然沿用这种版本方案。而 IE 的 JScript 有不同的版本号规则。这些 JScript 版本与上表提到的 JavaScript 版本并不对应。此外，多数浏览器对 JavaScript 的支持，指的是实现 ECMAScript 和 DOM 的程度。
+:::tip 注意
+Netscape/Mozilla 仍然沿用这种版本方案。而 IE 的 JScript 有不同的版本号规则。这些 JScript 版本与上表提到的 JavaScript 版本并不对应。此外，多数浏览器对 JavaScript 的支持，指的是实现 ECMAScript 和 DOM 的程度。
+:::
 
 
 ## 1.4 小结

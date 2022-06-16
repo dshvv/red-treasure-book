@@ -29,3 +29,8 @@ pnpm-debug.log*
 *.sw?
 docs/.vuepress/.temp
 docs/.vuepress/.cache
+
+node_modules/
+hope-root/.vuepress/.cache/
+hope-root/.vuepress/.temp/
+hope-root/.vuepress/dist/

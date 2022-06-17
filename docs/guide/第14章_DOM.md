@@ -2,6 +2,7 @@
 lang: zh-CN
 title: 第14章 DOM
 description: 理解文档对象模型（DOM）的构成、节点类型、 浏览器兼容性、MutationObserver 接口
+order: 14
 ---
 
 本章内容：理解文档对象模型（DOM）的构成、节点类型、 浏览器兼容性、MutationObserver 接口

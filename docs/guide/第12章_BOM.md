@@ -2,6 +2,7 @@
 lang: zh-CN
 title: 第12章 BOM
 description: 理解 BOM 的核心——window 对象、控制窗口及弹窗、通过 location 对象获取页面信息、使用 navigator 对象了解浏览器、通过 history 对象操作浏览器历史
+order: 12
 ---
 
 本章内容：理解 BOM 的核心——window 对象、控制窗口及弹窗、通过 location 对象获取页面信息、使用 navigator 对象了解浏览器、通过 history 对象操作浏览器历史

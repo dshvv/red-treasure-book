@@ -2,6 +2,7 @@
 lang: zh-CN
 title: 第2章 HTML中的JavaScript
 description: 使用`<script>`元素、行内脚本与外部脚本的比较、文档模式对 JavaScript 有什么影响、确保 JavaScript 不可用时的用户体验
+order: 2
 ---
 
 本章内容：使用`<script>`元素、行内脚本与外部脚本的比较、文档模式对 JavaScript 有什么影响、确保 JavaScript 不可用时的用户体验

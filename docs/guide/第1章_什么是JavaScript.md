@@ -2,6 +2,7 @@
 lang: zh-CN
 title: 第1章 什么是JavaScript
 description: JavaScript 历史回顾、JavaScript 是什么、JavaScript 与 ECMAScript 的关系、JavaScript 的不同版本
+order: 1
 ---
 
 本章内容有：JavaScript 历史回顾、JavaScript 是什么、JavaScript 与 ECMAScript 的关系、JavaScript 的不同版本。

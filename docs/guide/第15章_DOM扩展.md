@@ -2,6 +2,7 @@
 lang: zh-CN
 title: 第15章 DOM 扩展
 description: 理解 Selectors API、使用 HTML5 DOM 扩展
+order: 15
 ---
 
 本章内容：理解 Selectors API、使用 HTML5 DOM 扩展

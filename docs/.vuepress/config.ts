@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { path } from "@vuepress/utils";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -10,9 +11,18 @@ export default defineUserConfig({
   dest: './dist',
   theme,
   alias: {
-    "@theme-hope/components/HomeHero": path.resolve(
+    "@theme-hope/components/HomePage": path.resolve(
       __dirname,
       "./components/HomePage.vue"
     ),
-  }
+  },
+  plugins:[
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+    }),
+  ]
 });

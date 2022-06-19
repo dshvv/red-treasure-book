@@ -40,7 +40,7 @@ const start = () => {
     background-attachment: fixed;
     background-color: #b5b3b2;
     position: relative;
-    filter: blur(4px);
+    filter: blur(2px);
     .fm-boy {
       position: absolute;
       bottom: 0;
@@ -61,7 +61,7 @@ const start = () => {
     align-items: center;
     .img {
       text-align: center;
-      opacity: 0.7;
+      opacity: 0.5;
       img {
         width: 80%;
       }
